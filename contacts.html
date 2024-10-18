@@ -68,7 +68,7 @@
                             <div class="mega-menu-info">
                                 <div class="info-item">
                                     <h2>Office</h2>
-                                    <p>65 E ,<br/>49th Ave ,<br/>Vancouver</p>
+                                    <p>Vancouver,B.C</p>
                                     <a href="tel:+160490626930" class="hover-underline light-line">
                                         <span class="link-text">+1 (604) 906-2693</span>
                                     </a>
@@ -220,9 +220,9 @@
                         <div class="col-md-5 col-12">
                             <div class="location-item">
                                 <h3 class="section-title">
-                                    <a href="#">Vancouver<br/>-BC</a>
+                                    <a href="#">Vancouver</a>
                                 </h3>
-                                <p class="title-sub">65 E <br/>49th Ave</p>
+                                <!-- <p class="title-sub">65 E <br/>49th Ave</p> -->
                                 <div class="location-hours">
                                     <p class="title-sub">Mon—Fri</p>
                                     <p class="title-sub">09:00—21:00</p>
@@ -233,89 +233,86 @@
                 </div>
             </section>
             <!-- Contact Location End -->
-            <!-- Contact Form -->
-            <section class="contact-form section-space">
-                <div class="container-fluid">
-                    <h2 class="section-title">Brief</h2>
-                    <p class="section-subtitle">Tell about your project and ask<br/> questions — we’ll get back to you</p>
-                    <form class="form" action="https://formspree.io/f/xjvnplyd" method="post" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-category">
-                                    <div class="form-category-item">
-                                        <input type="radio" name="category" id="web" class="form-checkbox" value="Web Development">
-                                        <label for="web" class="form-checkbox-label clickable">Web Development</label>
-                                    </div>
-                                    <div class="form-category-item">
-                                        <input type="radio" name="category" checked id="ad" class="form-checkbox" value="Advertising">
-                                        <label for="ad" class="form-checkbox-label clickable">Advertising</label>
-                                    </div>
-                                    <div class="form-category-item">
-                                        <input type="radio" name="category" id="branding" class="form-checkbox" value="Branding">
-                                        <label for="branding" class="form-checkbox-label clickable">Branding</label>
-                                    </div>
-                                </div>
-                            </div>
+         <!-- Contact Form -->
+  <section id="contactForm" class="contact-form section-space">
+    <div class="container-fluid">
+        <h2 class="section-title">Brief</h2>
+        <p class="section-subtitle">Tell about your project and ask<br/> questions — we’ll get back to you</p>
+        <form class="form" action="https://formspree.io/f/xjvnplyd" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-category">
+                        <div class="form-category-item">
+                            <input type="radio" name="category" id="web" class="form-checkbox" value="Web Development">
+                            <label for="web" class="form-checkbox-label clickable">Web Development</label>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-item">
-                                    <input type="text" class="form-input" id="form-name" name="name" placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-item">
-                                    <input type="tel" class="form-input" id="form-phone" name="phone" placeholder="Phone" required pattern="[0-9]{10}">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-item">
-                                    <input type="email" class="form-input" id="form-email" name="email" placeholder="Email" required>
-                                </div>
-                            </div>
+                        <div class="form-category-item">
+                            <input type="radio" name="category" checked id="mobile" class="form-checkbox" value="Mobile App Development">
+                            <label for="mobile" class="form-checkbox-label clickable">Mobile App Development</label>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-item">
-                                    <textarea id="form-task" class="form-text" name="task" placeholder="Task" required></textarea>
-                                </div>
-                            </div>
+                        <div class="form-category-item">
+                            <input type="radio" name="category" id="Management_tools" class="form-checkbox" value="Business Management Tools">
+                            <label for="Management_tools" class="form-checkbox-label clickable">Business Management Tools</label>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="attach-file">
-                                    <input type="file" id="form-file" class="form-upload" name="attachment" required>
-                                    <label for="form-file" class="form-upload-title clickable">
-                                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10 11.5V6C10 4.93913 9.57857 3.92172 8.82843 3.17157C8.07828 2.42143 7.06087 2 6 2C4.93913 2 3.92172 2.42143 3.17157 3.17157C2.42143 3.92172 2 4.93913 2 6V11.5C2 13.2239 2.68482 14.8772 3.90381 16.0962C5.12279 17.3152 6.77609 18 8.5 18C10.2239 18 11.8772 17.3152 13.0962 16.0962C14.3152 14.8772 15 13.2239 15 11.5V2H17V11.5C17 13.7543 16.1045 15.9163 14.5104 17.5104C12.9163 19.1045 10.7543 20 8.5 20C6.24566 20 4.08365 19.1045 2.48959 17.5104C0.895533 15.9163 0 13.7543 0 11.5V6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0C7.5913 0 9.11742 0.632141 10.2426 1.75736C11.3679 2.88258 12 4.4087 12 6V11.5C12 12.4283 11.6313 13.3185 10.9749 13.9749C10.3185 14.6313 9.42826 15 8.5 15C7.57174 15 6.6815 14.6313 6.02513 13.9749C5.36875 13.3185 5 12.4283 5 11.5V6H7V11.5C7 11.8978 7.15804 12.2794 7.43934 12.5607C7.72064 12.842 8.10218 13 8.5 13C8.89782 13 9.27936 12.842 9.56066 12.5607C9.84196 12.2794 10 11.8978 10 11.5Z" fill="black"/>
-                                        </svg>
-                                        Attach file
-                                    </label>
-                                    <span id="file-name"></span>
-                                </div>
-                            </div>
+                        <div class="form-category-item">
+                            <input type="radio" name="category" id="Support_tools" class="form-checkbox" value="Business Support Tools">
+                            <label for="Support_tools" class="form-checkbox-label clickable">Business Support Tools</label>
                         </div>
-                        <div class="form-row">
-                            <div class="col-12">
-                                <div class="form-submit">
-                                    <button class="btn" type="submit">Send</button>
-                                    <p class="privacy">I agree to <span>personal data</span> processing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
-            
-          
-            
-            
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-item">
+                        <input type="text" class="form-input" id="form-name" name="name" placeholder="Name" required>
+                    </div>
                 </div>
-            </section>
-            <!-- Contact Form End -->
-        </main>
+                <div class="col-sm-4">
+                    <div class="form-item">
+                        <input type="tel" class="form-input" id="form-phone" name="phone" placeholder="Phone" required pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-item">
+                        <input type="email" class="form-input" id="form-email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-item">
+                        <textarea id="form-task" class="form-text" name="task" placeholder="Task" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="attach-file">
+                        <input type="file" id="form-file" class="form-upload" name="attachment" required>
+                        <label for="form-file" class="form-upload-title clickable">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 11.5V6C10 4.93913 9.57857 3.92172 8.82843 3.17157C8.07828 2.42143 7.06087 2 6 2C4.93913 2 3.92172 2.42143 3.17157 3.17157C2.42143 3.92172 2 4.93913 2 6V11.5C2 13.2239 2.68482 14.8772 3.90381 16.0962C5.12279 17.3152 6.77609 18 8.5 18C10.2239 18 11.8772 17.3152 13.0962 16.0962C14.3152 14.8772 15 13.2239 15 11.5V2H17V11.5C17 13.7543 16.1045 15.9163 14.5104 17.5104C12.9163 19.1045 10.7543 20 8.5 20C6.24566 20 4.08365 19.1045 2.48959 17.5104C0.895533 15.9163 0 13.7543 0 11.5V6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0C7.5913 0 9.11742 0.632141 10.2426 1.75736C11.3679 2.88258 12 4.4087 12 6V11.5C12 12.4283 11.6313 13.3185 10.9749 13.9749C10.3185 14.6313 9.42826 15 8.5 15C7.57174 15 6.6815 14.6313 6.02513 13.9749C5.36875 13.3185 5 12.4283 5 11.5V6H7V11.5C7 11.8978 7.15804 12.2794 7.43934 12.5607C7.72064 12.842 8.10218 13 8.5 13C8.89782 13 9.27936 12.842 9.56066 12.5607C9.84196 12.2794 10 11.8978 10 11.5Z" fill="black"/>
+                            </svg>
+                            Attach file
+                        </label>
+                        <span id="file-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-12">
+                    <div class="form-submit">
+                        <button class="btn" type="submit">Send</button>
+                        <p class="privacy">I agree to <span>personal data</span> processing</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</main>
         <!-- Page Content End -->
-
+ 
         <!-- Page Footer -->
         <footer class="page-footer">
             <div class="container-fluid">
@@ -323,9 +320,8 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="footer-column">
                             <h2 class="footer-title">Office</h2>
-                            <p>65 E,<br/>
-                                49th Ave,<br/>
-                                Vancouver
+                            <p>
+                                Vancouver, B.C
                             </p>
                             <a href="tel:+160490626930" class="hover-underline">
                                 <span class="link-text">+1 (604) 906-2693</span>
