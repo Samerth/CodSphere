@@ -770,6 +770,29 @@ body.dark-screen .normalCursor {
     margin-right: 0
 }
 
+.page-footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* Default text color for all elements */
+}
+
+.page-footer p,
+.page-footer a,
+.page-footer .footer-title,
+.page-footer .contact-info, /* Targeting phone number, email */
+.page-footer .footer-links a, /* Targeting FAQ, Privacy Policy links */
+.page-footer .subscribe input { /* Input field text color */
+    color: #fff !important; /* Ensure white color is applied */
+}
+
+.page-footer a:hover {
+    color: #ccc; /* Optional: lighter hover state for links */
+}
+
+.subscribe input::placeholder {
+    color: #fff; /* Placeholder text color */
+}
+
+
 .media-grid-items {
     border-radius: 20px;
     overflow: hidden
@@ -1600,6 +1623,8 @@ body.dark-screen .normalCursor {
     margin-top: -17px
 }
 
+
+
 .subscribe-submit {
     background: 0 0;
     border: 0;
@@ -1609,7 +1634,10 @@ body.dark-screen .normalCursor {
 .subscribe input {
     font-size: 18px;
     min-height: 55px;
-    padding-right: 50px
+    width: 100%; /* Increase width to stretch the input field */
+    padding-left: 20px; /* Move placeholder text slightly to the right */
+    padding-right: 50px;
+    border-radius: 30px; /* Keeps the circular edges */
 }
 
 .subscribe input::placeholder {
@@ -1663,4 +1691,123 @@ body.dark-screen .normalCursor {
     width: 100%;
     height: 100%;
     object-fit: cover
+}
+
+/* Privacy Policy Section Styles */
+.privacy-policy {
+    padding: 60px 15px; /* Add space around the section */
+    background-color: #f9f9f9; /* Background color for contrast */
+}
+
+.privacy-policy .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333; /* Main section titles */
+    margin-bottom: 20px;
+}
+
+.privacy-policy .section-subtitle {
+    font-size: 16px;
+    color: #666; /* Subtitle color for lighter text */
+    margin-bottom: 30px; /* Space below the subtitle */
+}
+
+.privacy-policy .title-sub {
+    font-size: 18px;
+    color: #555; /* General text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.privacy-policy ul {
+    list-style: disc; /* Bullet points */
+    padding-left: 20px; /* Indent for list items */
+    margin-bottom: 20px;
+}
+
+.privacy-policy ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.privacy-policy a {
+    color: #007bff; /* Link color */
+    text-decoration: underline;
+}
+
+.privacy-policy a:hover {
+    text-decoration: none;
+    color: #0056b3; /* Darker hover effect for links */
+}
+
+/* FAQ Section Styles */
+.faqs {
+    padding: 60px 15px; /* Space around the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.faqs .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333; /* Main section title color */
+    margin-bottom: 20px;
+    text-align: center; /* Center the FAQ section title */
+}
+
+.faqs .section-subtitle {
+    font-size: 16px;
+    color: #666; /* Lighter text for subtitle */
+    margin-bottom: 30px; /* Space below the subtitle */
+    text-align: center; /* Center subtitle */
+}
+
+.faqs .title-sub {
+    font-size: 18px;
+    color: #555; /* General text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.faqs h3.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333; /* Darker text color for FAQ questions */
+    text-align: left; /* Left-align the FAQ questions */
+    margin-bottom: 15px; /* Space below each question */
+}
+
+.faqs ul {
+    list-style: disc; /* Bullet points */
+    padding-left: 20px; /* Indentation for lists */
+    margin-bottom: 20px;
+}
+
+.faqs ul li {
+    font-size: 16px;
+    color: #444; /* Slightly darker for bullet points */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.faqs a {
+    color: #007bff; /* Link color */
+    text-decoration: underline;
+}
+
+.faqs a:hover {
+    text-decoration: none;
+    color: #0056b3; /* Darker hover effect for links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faqs .section-title {
+        font-size: 26px; /* Adjust title size for smaller screens */
+    }
+    .faqs .section-subtitle, .faqs .title-sub {
+        font-size: 15px; /* Adjust text size for smaller screens */
+    }
+    .faqs h3.section-title {
+        font-size: 20px; /* Adjust question size for smaller screens */
+    }
 }
