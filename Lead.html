@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CodSphere || Lead</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/lead-form.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="page-header fixed-header">
+            <div class="container-fluid">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <span class="logo-light">
+                            <img src="assets/images/logos/logo-light.png" alt="Logo">
+                        </span>
+                        <span class="logo-dark">
+                            <img src="assets/images/logos/logo.png" alt="Logo">
+                        </span>
+                    </a>
+                    <div class="header-btns">
+                        <a href="https://codcrm.com/login?redirect-to=%2Fapp%2Flead%3Fstatus%3DOpen#login"
+                            class="btn btn-outlined btn-icon hide-x hover-underline-trigger">
+                            <span class="hover-underline">
+                                <span class="link-text">Login</span>
+                            </span>
+                        </a>
+                        <a href="trial.html"
+                            class="btn btn-outlined btn-icon hide-x hover-underline-trigger">
+                            <span class="hover-underline">
+                                <span class="link-text">Start Free Trial</span>
+                            </span>
+                        </a>
+                        <a href="contacts.html"
+                            class="btn btn-outlined btn-icon hide-x hover-underline-trigger">
+                            <span class="hover-underline">
+                                <span class="link-text">Get in Touch</span>
+                            </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0044 9.414L7.3974 18.021L5.9834 16.607L14.5894 8H7.0044V6H18.0044V17H16.0044V9.414Z"
+                                    fill="#0047FF" />
+                            </svg>
+                        </a>
+                        <button class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="lead-form-container">
+            <h2 class="lead-form-title">Register for a Free Demo</h2>
+
+            <form action="https://formspree.io/f/xnnpqwbv" method="POST" class="lead-contact-form" id="leadForm">
+                <div class="lead-form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="organization">Organization Name</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" name="province" required>
+                </div>
+
+                <div class="lead-form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <!-- Hidden input to redirect to the thank you page -->
+                <input type="hidden" name="_next" value="thankyou.html">
+                
+                <button type="submit" class="lead-submit-btn">Submit</button>
+            </form>
+        </div>
+        <footer class="page-footer lead-page-footer">
+            <div class="container">
+                <center>
+                    <p>© 2025 Codsphere. All Rights Reserved.</p>
+                </center>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            // Submit form data to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    console.log("Form submitted successfully!");
+                    // Redirect to thank you page after successful submission
+                    window.location.href = 'thankyou.html';
+                } else {
+                    console.error("Form submission error.");
+                }
+            }).catch(error => {
+                console.error("Error submitting form:", error);
+            });
+        });
+    </script>
+
+</body>
+</html>
