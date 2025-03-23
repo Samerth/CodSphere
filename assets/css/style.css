@@ -1961,3 +1961,113 @@ body.dark-screen .normalCursor {
     font-size: 18px;
     margin-bottom: 15px;
 }
+.erp-content {
+    max-width: 80%; /* Restrict width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify; /* Justify text for a clean look */
+}
+
+.erp-content h2, 
+.erp-content h3, 
+.erp-content h4 {
+    margin-top: 25px; /* More space above headings */
+    margin-bottom: 15px; /* Balanced spacing below headings */
+    text-align: left; /* Keep headings left-aligned */
+}
+
+.erp-content p, 
+.erp-content ul {
+    margin-bottom: 25px; /* Equal and increased spacing between paragraphs and lists */
+    line-height: 1.8; /* Improved readability */
+    text-align: justify; /* Justify text for consistency */
+}
+
+.erp-content ul {
+    padding-left: 25px; /* Proper indentation for lists */
+}
+
+.erp-content li {
+    margin-bottom: 8px; /* Spacing between list items */
+}
+.demo-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px; /* Space between text and button */
+    transition: background 0.3s ease-in-out;
+}
+
+.demo-button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    color: white; /* Ensures text stays white on hover */
+    text-decoration: none; /* Prevents underline on hover */
+}
+.thankyou-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+    background-color: #f8f9fa;
+}
+
+.thankyou-message {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #000; /* Black border around the message */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a better look */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.thankyou-message h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.thankyou-message p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.thankyou-message .btn-home {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.thankyou-message .btn-home:hover {
+    background-color: black;
+}
+.crm-image-container {
+    margin: 70px; /* Add some space above the image */
+    text-align: center; /* Center the image */
+}
+
+.crm-image {
+    max-width: 600px; /* Set a smaller max width for the image */
+    height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+.video-container {
+    margin: 50px; /* Add space above the video */
+    text-align: center; /* Center the video */
+}
+
+.video-container video {
+    width: 80%; /* Increase width to 80% of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure the video is responsive */
+}
